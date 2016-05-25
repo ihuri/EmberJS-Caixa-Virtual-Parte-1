@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Exemplo 1</title>
+</head>
+<body>
+<div>
+<h1>Caixa Virtual</h1>
+
+ <label>Name:</label>
+ {{input type="text" value=nome placeholder="Digite seu Nome"}}
+ <br/>
+ <label>Nascimento:</label>
+ {{input type="date" value=nasc placeholder="Data de Nascimento"}}
+ <br/>
+ <label>CPF:</label>
+ {{input type="text" value=cpf placeholder="CPF sem pontos e traço"}}
+
+</div>
+<div class="text">
+<hr/>
+<h2>Seus Dados</h2>
+<p>Nome: {{nome}}</p>
+<p>Nascimento: {{nasc}}</p>
+<p>CPF: {{cpf}}</p>
+</div>
+<hr/>
+
+</body>
+</html>
+
+{{outlet}}
